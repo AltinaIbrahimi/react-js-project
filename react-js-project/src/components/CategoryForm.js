@@ -1,4 +1,3 @@
-// src/components/CategoryForm.js
 import React, { useState } from 'react';
 
 function CategoryForm({ addCategory }) {
@@ -16,9 +15,9 @@ function CategoryForm({ addCategory }) {
         type="text" 
         value={name} 
         onChange={(e) => setName(e.target.value)} 
-        placeholder="Add Category" 
+        placeholder="Create Category" 
       />
-      <button type="submit" className="add-category-btn">+</button>
+      <button type="submit" className="add-category-btn ">+</button>
     </form>
   );
 }

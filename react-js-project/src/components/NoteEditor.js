@@ -1,4 +1,3 @@
-// src/components/NoteEditor.js
 import React, { useState } from 'react';
 
 function NoteEditor({ addNote }) {
@@ -18,14 +17,16 @@ function NoteEditor({ addNote }) {
         type="text" 
         value={title} 
         onChange={(e) => setTitle(e.target.value)} 
-        placeholder="Note Title" 
+        placeholder="Add a title" 
+        className="title-input"
       />
       <textarea 
         value={content} 
         onChange={(e) => setContent(e.target.value)} 
-        placeholder="Add your notes" 
+        placeholder="Write your note here" 
+        className="content-textarea"
       />
-      <button type="submit" className="add-note-btn">Add Note</button>
+      <button type="submit" className="add-note-btn">+</button>
     </form>
   );
 }

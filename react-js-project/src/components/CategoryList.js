@@ -1,4 +1,4 @@
-// src/components/CategoryList.js
+
 import React from 'react';
 
 function CategoryList({ categories, setSelectedCategory }) {
